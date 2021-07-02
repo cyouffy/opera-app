@@ -19,7 +19,7 @@ Administrators can manage sessions, opera performances, etc.
         <td valign="top" align="center"><b>Registration</b></td>
         <td valign="top" align="center"><b>+</b></td>
         <td valign="top" align="center"><b>-</b></td>
-        <td valign="top" align="center"><b>+</b></td>
+        <td valign="top" align="center"><b>-</b></td>
    </tr>
     <tr> 
         <td valign="top" align="center"><b>View available sessions</b></td>
