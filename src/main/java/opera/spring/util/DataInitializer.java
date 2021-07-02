@@ -23,12 +23,9 @@ public class DataInitializer {
         roleService.add(new Role(Role.RoleName.ROLE_ADMIN));
         roleService.add(new Role(Role.RoleName.ROLE_USER));
 
-        userService.add(new User("max@gmail.com", "max",
+        userService.add(new User("admin@gmail.com", "admin",
                 Set.of(roleService.getRoleByName(Role.RoleName.ROLE_ADMIN))));
-        userService.add(new User("bob@gmail.com", "bob",
+        userService.add(new User("user@gmail.com", "user",
                 Set.of(roleService.getRoleByName(Role.RoleName.ROLE_USER))));
-        userService.add(new User("name@gmail.com", "name",
-                Set.of(roleService.getRoleByName(Role.RoleName.ROLE_USER),
-                        roleService.getRoleByName(Role.RoleName.ROLE_ADMIN))));
     }
 }
