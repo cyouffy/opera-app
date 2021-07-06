@@ -17,8 +17,8 @@ public class PerformanceSessionServiceImpl implements PerformanceSessionService 
     }
 
     @Override
-    public List<PerformanceSession> findAvailableSessions(Long movieId, LocalDate date) {
-        return performanceSessionDao.findAvailableSessions(movieId, date);
+    public List<PerformanceSession> findAvailableSessions(Long performanceId, LocalDate date) {
+        return performanceSessionDao.findAvailableSessions(performanceId, date);
     }
 
     @Override

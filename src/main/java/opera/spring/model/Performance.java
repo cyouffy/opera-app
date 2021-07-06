@@ -40,7 +40,7 @@ public class Performance {
 
     @Override
     public String toString() {
-        return "Movie{"
+        return "Performance{"
                 + "id=" + id
                 + ", title='" + title + '\''
                 + ", description='" + description

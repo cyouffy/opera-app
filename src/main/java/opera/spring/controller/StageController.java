@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/cinema-halls")
+@RequestMapping("/stage")
 public class StageController {
     private final StageService stageService;
     private final StageMapper stageMapper;

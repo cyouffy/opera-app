@@ -19,18 +19,18 @@ public class PerformanceSessionDaoImpl extends AbstractDao<PerformanceSession>
     }
 
     @Override
-    public List<PerformanceSession> findAvailableSessions(Long movieId, LocalDate date) {
+    public List<PerformanceSession> findAvailableSessions(Long performanceId, LocalDate date) {
         try (Session session = factory.openSession()) {
             Query<PerformanceSession> getAvailableSessions = session.createQuery(
-                    "FROM MovieSession WHERE id = :id "
+                    "FROM PerformanceSession WHERE id = :id "
                             + "AND DATE_FORMAT(showTime, '%Y-%m-%d') = :date",
                     PerformanceSession.class);
-            getAvailableSessions.setParameter("id", movieId);
+            getAvailableSessions.setParameter("id", performanceId);
             getAvailableSessions.setParameter("date", date.toString());
             return getAvailableSessions.getResultList();
         } catch (Exception e) {
-            throw new DataProcessingException("Session for movie with id "
-                    + movieId + " and show date " + date + " not found", e);
+            throw new DataProcessingException("Session for performance with id "
+                    + performanceId + " and show date " + date + " not found", e);
         }
     }
 }

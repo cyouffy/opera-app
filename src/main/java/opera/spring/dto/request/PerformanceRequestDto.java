@@ -5,15 +5,15 @@ import javax.validation.constraints.Size;
 
 public class PerformanceRequestDto {
     @NotNull
-    private String movieTitle;
+    private String performanceTitle;
     @Size(max = 200)
-    private String movieDescription;
+    private String performanceDescription;
 
-    public String getMovieTitle() {
-        return movieTitle;
+    public String getPerformanceTitle() {
+        return performanceTitle;
     }
 
-    public String getMovieDescription() {
-        return movieDescription;
+    public String getPerformanceDescription() {
+        return performanceDescription;
     }
 }

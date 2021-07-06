@@ -26,11 +26,11 @@ public class Ticket {
         this.id = id;
     }
 
-    public PerformanceSession getMovieSession() {
+    public PerformanceSession getPerformanceSession() {
         return performanceSession;
     }
 
-    public void setMovieSession(PerformanceSession performanceSession) {
+    public void setPerformanceSession(PerformanceSession performanceSession) {
         this.performanceSession = performanceSession;
     }
 
@@ -46,7 +46,7 @@ public class Ticket {
     public String toString() {
         return "Ticket{"
                 + "id=" + id
-                + ", movieSession=" + performanceSession
+                + ", performanceSession=" + performanceSession
                 + ", user=" + user + '}';
     }
 }

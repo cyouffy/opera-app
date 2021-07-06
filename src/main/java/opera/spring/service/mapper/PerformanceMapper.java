@@ -11,17 +11,17 @@ public class PerformanceMapper implements RequestDtoMapper<PerformanceRequestDto
     @Override
     public Performance mapToModel(PerformanceRequestDto dto) {
         Performance performance = new Performance();
-        performance.setTitle(dto.getMovieTitle());
-        performance.setDescription(dto.getMovieDescription());
+        performance.setTitle(dto.getPerformanceTitle());
+        performance.setDescription(dto.getPerformanceDescription());
         return performance;
     }
 
     @Override
     public PerformanceResponseDto mapToDto(Performance performance) {
         PerformanceResponseDto responseDto = new PerformanceResponseDto();
-        responseDto.setMovieId(performance.getId());
-        responseDto.setMovieTitle(performance.getTitle());
-        responseDto.setMovieDescription(performance.getDescription());
+        responseDto.setPerformanceId(performance.getId());
+        responseDto.setPerformanceTitle(performance.getTitle());
+        responseDto.setPerformanceDescription(performance.getDescription());
         return responseDto;
     }
 }

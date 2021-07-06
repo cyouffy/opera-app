@@ -23,7 +23,7 @@ public class StageServiceImpl implements StageService {
     @Override
     public Stage get(Long id) {
         return stageDao.get(id).orElseThrow(
-                () -> new DataProcessingException("Can't get cinema hall by id " + id));
+                () -> new DataProcessingException("Can't get stage by id " + id));
     }
 
     @Override

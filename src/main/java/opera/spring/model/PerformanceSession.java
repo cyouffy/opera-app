@@ -26,19 +26,19 @@ public class PerformanceSession {
         this.id = id;
     }
 
-    public Performance getMovie() {
+    public Performance getPerformance() {
         return performance;
     }
 
-    public void setMovie(Performance performance) {
+    public void setPerformance(Performance performance) {
         this.performance = performance;
     }
 
-    public Stage getCinemaHall() {
+    public Stage getStage() {
         return stage;
     }
 
-    public void setCinemaHall(Stage stage) {
+    public void setStage(Stage stage) {
         this.stage = stage;
     }
 
@@ -52,10 +52,10 @@ public class PerformanceSession {
 
     @Override
     public String toString() {
-        return "MovieSession{"
+        return "PerformanceSession{"
                 + "id=" + id
-                + ", movie=" + performance
-                + ", cinemaHall=" + stage
+                + ", performance=" + performance
+                + ", stage=" + stage
                 + ", showTime=" + showTime + '}';
     }
 }

@@ -10,7 +10,7 @@ public interface PerformanceSessionDao {
 
     Optional<PerformanceSession> get(Long id);
 
-    List<PerformanceSession> findAvailableSessions(Long movieId, LocalDate date);
+    List<PerformanceSession> findAvailableSessions(Long performanceId, LocalDate date);
 
     PerformanceSession update(PerformanceSession performanceSession);
 

@@ -1,42 +1,42 @@
 package opera.spring.dto.response;
 
 public class PerformanceSessionResponseDto {
-    private Long movieSessionId;
-    private Long movieId;
-    private String movieTitle;
-    private Long cinemaHallId;
+    private Long performanceSessionId;
+    private Long performanceId;
+    private String performanceTitle;
+    private Long stageId;
     private String showTime;
 
-    public Long getMovieSessionId() {
-        return movieSessionId;
+    public Long getPerformanceSessionId() {
+        return performanceSessionId;
     }
 
-    public void setMovieSessionId(Long movieSessionId) {
-        this.movieSessionId = movieSessionId;
+    public void setPerformanceSessionId(Long performanceSessionId) {
+        this.performanceSessionId = performanceSessionId;
     }
 
-    public Long getMovieId() {
-        return movieId;
+    public Long getPerformanceId() {
+        return performanceId;
     }
 
-    public void setMovieId(Long movieId) {
-        this.movieId = movieId;
+    public void setPerformanceId(Long performanceId) {
+        this.performanceId = performanceId;
     }
 
-    public String getMovieTitle() {
-        return movieTitle;
+    public String getPerformanceTitle() {
+        return performanceTitle;
     }
 
-    public void setMovieTitle(String movieTitle) {
-        this.movieTitle = movieTitle;
+    public void setPerformanceTitle(String performanceTitle) {
+        this.performanceTitle = performanceTitle;
     }
 
-    public Long getCinemaHallId() {
-        return cinemaHallId;
+    public Long getStageId() {
+        return stageId;
     }
 
-    public void setCinemaHallId(Long cinemaHallId) {
-        this.cinemaHallId = cinemaHallId;
+    public void setStageId(Long stageId) {
+        this.stageId = stageId;
     }
 
     public String getShowTime() {

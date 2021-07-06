@@ -1,31 +1,31 @@
 package opera.spring.dto.response;
 
 public class PerformanceResponseDto {
-    private Long movieId;
-    private String movieTitle;
-    private String movieDescription;
+    private Long performanceId;
+    private String performanceTitle;
+    private String performanceDescription;
 
-    public Long getMovieId() {
-        return movieId;
+    public Long getPerformanceId() {
+        return performanceId;
     }
 
-    public void setMovieId(Long movieId) {
-        this.movieId = movieId;
+    public void setPerformanceId(Long performanceId) {
+        this.performanceId = performanceId;
     }
 
-    public String getMovieTitle() {
-        return movieTitle;
+    public String getPerformanceTitle() {
+        return performanceTitle;
     }
 
-    public void setMovieTitle(String movieTitle) {
-        this.movieTitle = movieTitle;
+    public void setPerformanceTitle(String performanceTitle) {
+        this.performanceTitle = performanceTitle;
     }
 
-    public String getMovieDescription() {
-        return movieDescription;
+    public String getPerformanceDescription() {
+        return performanceDescription;
     }
 
-    public void setMovieDescription(String movieDescription) {
-        this.movieDescription = movieDescription;
+    public void setPerformanceDescription(String performanceDescription) {
+        this.performanceDescription = performanceDescription;
     }
 }

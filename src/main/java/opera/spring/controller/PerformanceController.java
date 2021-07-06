@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/movies")
+@RequestMapping("/performances")
 public class PerformanceController {
     private final PerformanceService performanceService;
     private final PerformanceMapper performanceMapper;

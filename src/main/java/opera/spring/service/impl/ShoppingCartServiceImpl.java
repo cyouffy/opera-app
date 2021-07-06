@@ -22,7 +22,7 @@ public class ShoppingCartServiceImpl implements ShoppingCartService {
     @Override
     public void addSession(PerformanceSession performanceSession, User user) {
         Ticket ticket = new Ticket();
-        ticket.setMovieSession(performanceSession);
+        ticket.setPerformanceSession(performanceSession);
         ticket.setUser(user);
         ShoppingCart shoppingCart = shoppingCartDao.getByUser(user);
         ticketDao.add(ticket);

@@ -33,11 +33,11 @@ public class ShoppingCartController {
         this.performanceSessionService = performanceSessionService;
     }
 
-    @PostMapping("/movie-sessions")
-    public void addToCart(Authentication auth, @RequestParam Long movieSessionId) {
+    @PostMapping("/performance-sessions")
+    public void addToCart(Authentication auth, @RequestParam Long performanceSessionId) {
         UserDetails details = (UserDetails) auth.getPrincipal();
         User user = userService.findByEmail(details.getUsername());
-        PerformanceSession performanceSession = performanceSessionService.get(movieSessionId);
+        PerformanceSession performanceSession = performanceSessionService.get(performanceSessionId);
         shoppingCartService.addSession(performanceSession, user);
     }
 

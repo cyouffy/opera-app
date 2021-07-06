@@ -28,23 +28,23 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                 .antMatchers("/register").permitAll()
-                .antMatchers(HttpMethod.GET, "/movies", "/cinema-halls",
-                        "/movie-sessions/available").permitAll()
+                .antMatchers(HttpMethod.GET, "/performances", "/stage",
+                        "/performance-sessions/available").permitAll()
                 .antMatchers(HttpMethod.GET,
                         "/shopping-carts/by-user/*",
                         "/orders/*").hasRole("USER")
                 .antMatchers(HttpMethod.POST,
-                        "/shopping-carts/movie-sessions/*",
+                        "/shopping-carts/performance-sessions/*",
                         "/orders/complete/*").hasRole("USER")
                 .antMatchers(HttpMethod.GET,
                         "/users/by-email").hasRole("ADMIN")
                 .antMatchers(HttpMethod.POST,
-                        "/movies/*",
-                        "/movie-sessions/*",
-                        "/cinema-halls/*").hasRole("ADMIN")
-                .antMatchers(HttpMethod.PUT, "/movie-sessions")
+                        "/performances/*",
+                        "/performance-sessions/*",
+                        "/stage/*").hasRole("ADMIN")
+                .antMatchers(HttpMethod.PUT, "/performance-sessions")
                 .hasRole("ADMIN")
-                .antMatchers(HttpMethod.DELETE, "/movie-sessions")
+                .antMatchers(HttpMethod.DELETE, "/performance-sessions")
                 .hasRole("ADMIN")
                 .anyRequest().authenticated()
                 .and()

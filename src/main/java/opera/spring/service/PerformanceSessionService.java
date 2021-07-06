@@ -5,7 +5,7 @@ import java.util.List;
 import opera.spring.model.PerformanceSession;
 
 public interface PerformanceSessionService {
-    List<PerformanceSession> findAvailableSessions(Long movieId, LocalDate date);
+    List<PerformanceSession> findAvailableSessions(Long performanceId, LocalDate date);
 
     PerformanceSession add(PerformanceSession session);
 

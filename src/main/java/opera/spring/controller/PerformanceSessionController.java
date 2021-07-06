@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/movie-sessions")
+@RequestMapping("/performance-sessions")
 public class PerformanceSessionController {
     public static final String DATE_PATTERN = DateTimePatternUtil.DATE_PATTERN;
     private final PerformanceSessionService performanceSessionService;
@@ -43,11 +43,11 @@ public class PerformanceSessionController {
     }
 
     @GetMapping("/available")
-    public List<PerformanceSessionResponseDto> getAll(@RequestParam Long movieId,
+    public List<PerformanceSessionResponseDto> getAll(@RequestParam Long performanceId,
                                                       @RequestParam
                                                 @DateTimeFormat(pattern = DATE_PATTERN)
                                                         LocalDate date) {
-        return performanceSessionService.findAvailableSessions(movieId, date)
+        return performanceSessionService.findAvailableSessions(performanceId, date)
                 .stream()
                 .map(performanceSessionMapper::mapToDto)
                 .collect(Collectors.toList());

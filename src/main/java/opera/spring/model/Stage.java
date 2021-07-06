@@ -39,7 +39,7 @@ public class Stage {
 
     @Override
     public String toString() {
-        return "CinemaHall{"
+        return "Stage{"
                 + "id=" + id
                 + ", capacity=" + capacity
                 + ", description='" + description + '\'' + '}';
